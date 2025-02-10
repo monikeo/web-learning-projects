@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Digital Clock</title>
+</head>
+<body class="bg-zinc-700 w-screen h-screen">
+
+  <div id="container" class="flex flex-col justify-center items-center w-full
+    h-full">
+    <div id="digitalClock" class="border-3 border-gray-500 rounded-xl flex
+      flex-col justify-center items-center min-h-64 min-w-2xl">
+      <div id="date" class="h-20">
+        <p id="dateText" class="text-5xl font-bold"></p>
+        <hr class="my-3 border-gray-500"/>
+      </div>
+
+      <div id="digitalClock" class="text-white w-full flex justify-center">
+        <div class="flex justify-between items-centeri w-96 ">
+          <div id="digitalClockHour" class="border-2 border-gray-500 w-24 h-24
+            flex flex-col justify-center items-center rounded-xl">
+            <p id="digitalClockHourNumber" class="text-5xl font-bold"></p>
+            <p id="digitalClockHourTitle"></p>
+          </div>
+
+          <div id="digitalClockMinute" class="border-2 border-gray-500 w-24 h-24
+            flex flex-col justify-center items-center rounded-xl">
+            <p id="digitalClockMinuteNumber" class="text-5xl font-bold"></p>
+            <p id="digitalClockMinuteTitle"></p>
+          </div>
+
+          <div id="digitalClockSecond" class="border-2 border-gray-500 w-24 h-24
+            flex flex-col justify-center items-center rounded-xl">
+            <p id="digitalClockSecondNumber" class="text-5xl font-bold"></p>
+            <p id="digitalClockSecondTitle"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="title" class="uppercase font-extrabold text-white text-5xl mt-4"></h1>
+  </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>
+
