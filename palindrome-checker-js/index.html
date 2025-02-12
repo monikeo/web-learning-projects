@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/output.css" rel="stylesheet">
     <title>Palindrome Checker</title>
+
 </head>
-<body>
-    <h1>Hello, World!</h1>
+<body class="w-screen h-screen">
+    <div class="w-full h-full bg-slate-950 flex flex-col justify-center items-center">
+      <h1 id="title" class="text-white text-5xl font-bold"></h1>
+
+      <div id="cardPalindromeChecker" 
+        class="bg-white flex flex-col justify-center items-center min-w-md
+        rounded-xl my-10">
+        <p id="cardPalindromeCheckerTitle" class="my-4"></p>
+        <div id="cardPalindromeCheckerBox" 
+          class="flex justify-evenly items-center my-4 min-w-6/7">
+          <input id="cardPalindromeCheckerInput" type="text" placeholder="Type here..."
+            class="bg-transparent text-slate-950 text-lg rounded-md
+            placeholder:text-slate-400 px-2 border border-slate-200 h-10 w-64
+            focus:outline-none focus:border-slate-500 focus:shadow-sm hover:border-slate-300"/>
+          <button id="cardPalindromeCheckerBtn" 
+            type="button"
+            class="bg-indigo-500 hover:bg-indigo-700 text-white text-md w-24 h-10 rounded-xl"></button>
+        </div>
+        <p id="cardPalindromeCheckerResult" 
+          class="text-2xl mb-5">
+        </p>
+      </div>
+
+      <div id="cardHint" 
+        class="min-h-min bg-orange-100 flex justify-center items-center rounded-xl">
+        <p id="cardHintTitle" class="w-96 text-xl my-4 mx-8"></p>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
 
