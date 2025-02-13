@@ -6,8 +6,17 @@
     <link href="./style/output.css" rel="stylesheet">
     <title>Date Formmater</title>
 </head>
-<body>
-    <h1>Hello, World!</h1>
+<body class="w-screen h-screen">
+    <div id="container" class="min-h-screen bg-slate-950 text-white flex
+      flex-col justify-center items-center">
+      <h1 id="title" class="text-5xl font-bold"></h1>
+      <hr class="border-2 mt-5 w-32 rounded-xs"/>
+      <select id="dateOptions" name="dateOption" class="bg-white text-slate-950 text-lg
+        rounded-sm my-10 h-10 px-4 shadow-sm focus:outline-none font-bold">
+      </select>
+
+      <p id="result" class="text-4xl"></p>
+    </div>
 
 
     <script src="./script/script.js"></script>
