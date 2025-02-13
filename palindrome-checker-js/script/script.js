@@ -15,7 +15,10 @@ cardHintTitle.innerText = cardHintText;
 cardPalindromeCheckerTitle.innerText = cardPalindromeCheckerTitleText;
 cardPalindromeCheckerBtn.innerText = cardPalindromeCheckerBtnText;
 
+const removeNonAlphanumeric = (text) => text.replace(/[^a-zA-Z0-9]/, "");
+
 const isPalindrome = (text) => {
+    const text = removeNonAlphanumeric(text).toLowerCase();
     for(let i = 0; i < Math.floor(text.length / 2); i++) {
        if(text[i] !== text[text.length - 1 - i]) {
            return false;
