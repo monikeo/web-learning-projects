@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/output.css" rel="stylesheet">
     <title>Football Team Cards</title>
 </head>
-<body>
-    <h1>Hello, World!</h1>
-    <script src="./script/script.js"></script>
+<body class="">
+    <div class="bg-slate-950 min-w-screen min-h-screen text-white flex flex-col
+      justify-center items-center pt-20">
+      <h1 id="title" class="font-bold text-3xl uppercase"></h1>
+      <div id="teamInfoCard" class="text-white text-2xl my-3">
+        <p>Team: <span id="teamName"></span></p>
+        <p>Sport: <span id="teamSport"></span></p>
+        <p>Year: <span id="teamYear"></span></p>
+        <p>Haed coach: <span id="teamHeadCoach"></span></p>
+      </div>
+      <div id="filterTeammatesBlock" class="flex">
+        <p class="mr-6">Filter Teammates: </p>
+        <select id="filterTeammatesSelectOptions"
+          name="filterTeammatesSelectOptions">
+        </select>
+      </div>
+      <div id="playersCardBlock" class="flex flex-wrap justify-center
+        items-center">
+      </div>
+    </div>
+    <script src="./script/script.js" type="module"></script>
 </body>
 </html>
 
