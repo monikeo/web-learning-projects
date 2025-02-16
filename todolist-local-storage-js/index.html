@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style/output.css" rel="stylesheet" />
     <title>Todo-list Local Storage</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
+  </head>
+  <body>
+    <main class="min-w-screen min-h-screen bg-slate-950 flex flex-col justify-center items-center text-white">
+      <section id="section1" class="min-w-96">
+        <div class="flex justify-between items-center border min-h-40 px-4
+          rounded-xl border-slate-400">
+          <div id="section1-left" class="min-w-64">
+            <h1 id="title" class="text-3xl text-red-400 font-bold"></h1>
+            <p id="description" class=""></p>
+          </div>
+          <div id="section1-right" class="bg-slate-400 min-h-25 min-w-25
+            border-none rounded-full flex justify-center items-center">
+            <p id="taskDone" class="text-2xl">s</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="informationInputCard" class="absolute">
+        <div class="h-full w-90 border flex flex-col justify-center p-5">
+          <div class="w-full flex justify-end">
+            <button id="closeTaskFormBtn" class="bg-blue-950 rounded-sm w-6
+              h-6 hover:border hover:border-slate-500">x</button>
+          </div>
+          <div class="flex flex-col">
+            <label id="labelText" class="text-2xl mb-2">Title</label>
+            <input id="inputTitle" type="text" placeholder="Task Title" required
+            class="w-full bg-blue-950 h-8 rounded-sm px-2 placeholder:italic
+            placeholder:text-sm hover:border hover:border-slate-400"/>
+          </div>
+          <div class="flex flex-col">
+            <label id="labelText" class="text-2xl mb-2">Date</label>
+            <input id="inputDate" type="date" required class="w-full bg-blue-950 h-8
+            rounded-sm px-2 placeholder:italic placeholder:text-sm hover:border
+            hover:border-slate-400"/>
+          </div>
+          <div class="flex flex-col">
+            <label id="labelText" class="text-2xl mb-2">Description</label>
+            <input id="inputDescription" type="text" required class="w-full bg-blue-950
+            h-8 rounded-sm px-2 placeholder:italic placeholder:text-sm
+            hover:border hover:border-slate-400"/>
+          </div>
+          <div class="w-full flex justify-center">
+          <button id="addOrUpdateTaskBtn" class="w-50 bg-blue-950 h-8
+            rounded-sm hover:border hover:border-slate-500 mt-4"></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="section2" class="my-5 min-w-96">
+        <div class="py-2 flex justify-between items-center">
+          <div id="section2-left" class="">
+            <input id="inputTitle" type="text" placeholder="Task Title"
+              class="w-64 bg-blue-950 h-8 rounded-sm px-2 placeholder:italic
+              placeholder:text-sm hover:border hover:border-slate-400"/>
+          </div>
+          <div id="section2-right" class="">
+            <button id="addBtn" class="w-20 bg-blue-950 h-8 rounded-sm
+              hover:border hover:border-slate-500"> add</button>
+         </div>
+        </div>
+      </section>
+
+      <section id="section3">
+
+      </section>
+
+    </main>
+
+    <script src="./script/script.js"></script>
+  </body>
 </html>
+
 
