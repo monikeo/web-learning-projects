@@ -70,20 +70,7 @@
       </section>
 
       <section id="section3">
-        <div class="py-2 flex justify-between items-center">
-          <div class="flex justify-center items-center">
-            <div id="taskView">
-            </div>
-          </div>
-          <div class="flex justify-center items-center gap-3">
-            <button id="editBtn" class="w-20 bg-blue-950 h-8 rounded-sm">
-            </button>
 
-            <button id="deleteBtn" class="w-20 bg-blue-950 h-8 rounded-sm">
-
-            </button>
-          </div>
-        </div>
       </section>
 
     </main>

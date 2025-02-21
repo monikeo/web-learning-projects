@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.padding {
+    @apply px-10 py-2;
+}
